@@ -1,64 +1,23 @@
-.first,
-.second,
-.third {
-    display: grid;
+.grid {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    flex: 1;
 }
 
 .parent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.items {
     border: 0.4rem solid black;
-    height: 40rem;
-    width: 80rem;
+    flex-grow: 1;
+    padding: 20px;
 }
 
-#g1,
-#g2,
-#g3,
-#g4,
-#g5,
-#g6 {
-    border: 0.4rem solid black;
-}
-
-.parent1 {
-    grid-template-columns: 2fr 1fr 1fr;
-}
-
-.First1 {
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-}
-
-.First2 {
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-}
-
-.parent2 {
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-.Second1 {
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-}
-
-.Second2 {
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-}
-
-.parent3 {
-    grid-template-columns: 1fr 1fr 2fr;
-}
-
-.Third1 {
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-}
-
-.Third2 {
-    display: grid;
-    grid-template-rows: 1fr 3fr;
+.grow {
+    flex-grow: 2;
+    transition: 0.5s;
 }
